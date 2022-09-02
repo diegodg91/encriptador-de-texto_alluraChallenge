@@ -75,12 +75,13 @@ body{
     position: absolute;
     right: 0;
     margin-right: 40px;
+    text-align: center;
     
 }
 
 
 /*Contenido lateral VACIO*/
-.contenido__lateral--vacio{
+.mostrarContenido{
     display: block;
 }
 
@@ -91,7 +92,7 @@ body{
     padding: 0 1rem;
     text-align: center;
 }
-.contenido__lateral--vacio p{
+.contenido__lateral--vacio input{
     color: var(--darkblue100);
     font-size: 1rem;
     font-weight: 400;
@@ -99,6 +100,9 @@ body{
     text-align: center;
 }
 
+.ocultarContenido{
+    display: block;
+}
 
 .contenido__lateral--img img{
     width: 336px;
@@ -114,12 +118,13 @@ body{
 
 /* seccion copiar texto*/
 .contenido__lateral--copiar{
-    display: none;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     
 }
+
+
 .contenido__lateral--copiar button{
     margin-top: 8rem;
 }
@@ -128,7 +133,12 @@ body{
     font-weight: 400;
     color: #0A3871;
     padding: 2rem;
+    border: none;
+    outline: none;
+    text-align: center;
 }
+
+
 
 .input__entrada{
     outline: none;
